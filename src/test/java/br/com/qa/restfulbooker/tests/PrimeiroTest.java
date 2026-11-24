@@ -13,7 +13,21 @@ class PrimeiroTest {
 			.when()
 				.get("/ping")
 			.then()
+				.log().all()
 				.statusCode(201);
+	}
+	
+	@Test
+	void restfulBookerConsulta() {
+		given()
+				.baseUri("https://restful-booker.herokuapp.com")
+			.when()
+				.get("/booking")
+			.then()
+				.log().all()
+				.statusCode(200);		
 	}
 
 }
+
+	
