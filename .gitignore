@@ -1,0 +1,21 @@
+# Maven
+target/
+
+# Relatório Allure gerado localmente
+allure-report/
+allure-results/
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# Outras IDEs
+.idea/
+*.iml
+.vscode/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
