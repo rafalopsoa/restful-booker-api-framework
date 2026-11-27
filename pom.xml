@@ -17,6 +17,7 @@
         <rest-assured.version>6.3.0</rest-assured.version>
         <junit.version>5.14.4</junit.version>
         <surefire.version>3.6.0</surefire.version>
+        <jackson.version>2.21.4</jackson.version>
     </properties>
 
     <dependencyManagement>
@@ -43,6 +44,12 @@
             <artifactId>junit-jupiter</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>${jackson.version}</version>
+    <scope>test</scope>
+		</dependency>
     </dependencies>
 
     <build>
